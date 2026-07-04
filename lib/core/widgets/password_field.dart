@@ -1,0 +1,4 @@
+import 'package:flutter/material.dart'; 
+class PasswordField extends StatefulWidget 
+{ const PasswordField({super.key});
+ @override State<PasswordField> createState() => _PasswordFieldState(); } class _PasswordFieldState extends State<PasswordField> { bool obscure = true; @override Widget build(BuildContext context) { return TextField( obscureText: obscure, decoration: InputDecoration( hintText: "Password", prefixIcon: const Icon(Icons.lock), suffixIcon: IconButton( icon: Icon( obscure ? Icons.visibility : Icons.visibility_off, ), onPressed: () { setState(() { obscure = !obscure; }); }, ), filled: true, fillColor: Colors.white, border: OutlineInputBorder( borderRadius: BorderRadius.circular(18), borderSide: BorderSide.none, ), ), ); } }
