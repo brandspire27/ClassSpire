@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'role_selection_screen.dart';
 import '../core/theme/app_theme.dart';
 import '../features/splash/splash_screen.dart';
 
